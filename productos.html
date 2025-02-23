@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/imagenes/favicon-32x32.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ingredientes.html">Jabónología</a></li>
+            <!-- <li><a href="contacto.html">Contacto</a></li> -->
+        </ul>
+    </nav>
+
+    <section>
+        <h1>&#x1F33B; Nuestros productos &#x1F490;</h1>
+        <p class="descripcion">&#x1F33A; En El Jardín del Jabón siempre encontrarás una opción ideal para tus necesidades.&#x1F917;
+        <br>Explora nuestra variedad de productos y descubre más sobre sus usos y beneficios  al reverso.
+        <br>¡No olvides volver!&#x1F643; Agregamos nuevos productos cada 6 - 8 semanas. &#x1F338;
+        <h5 style="text-align: center; font-weight: 300;">
+            Nota: las figuras pueden variar dependiendo de la disponibilad.</h5>
+        </p>
+    </section>
+
+    <a href="https://wa.me/3328014110?text=Gracias%20por%20contactarme,%20por%20favor%20ve%20a%20la%20sección%20de%20mi%20contacto%20para%20más%20información." 
+        target="_blank" class="whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> 
+        </a>
+
+    <div class="product-grid">
+
+        <!-- <div class="producto2"> 
+            <div class="producto2-container">
+                <div class="cara front">
+                    <img src="imagenes/arroZ.jpg" alt="frente">
+                </div>
+                <div class="cara back2">
+                    <p>Beneficios:
+                        Jabón de arroz, ideal para aclarar y unificar el tono de la piel, mejorar la luminosidad. 
+                        Suaviza gracias a su contenido de almidón y antioxidantes,
+                        ayudando a mantener la hidratación y combatir los signos del envejecimiento.
+                    </p>
+                    <button class="show-info">Más Información</button>
+                </div>
+                <div class="cara extra">
+                    <p>Uso: Mayormente facial y cuerpo en general. <br>
+                        Ingredientes:
+                        Glicerina blanca.
+                        Arroz orgánico en polvo.
+                        Manteca de cacao.
+                        Aceite de Jazmín.
+                        Maicena. 
+                    </p>
+                    <button class="hide-info">Volver</button>
+                </div>
+            </div>
+            <p class="product-name">Arroz - Jazmin<br> $60.00</p>
+        </div> -->
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/arroZ.jpg">
+                <div class="back">
+                    <p><br>Jabón exfoliante y blanqueador <br> de la piel. <br><br>
+                        Ingredientes: <br>
+                        Glicerina blanca. <br>
+                        Arroz orgánico en polvo. <br>
+                        Manteca de cacao. <br>
+                        Aceite de Jazmín. <br>
+                        Maicena. <br>
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Arroz - Jazmin
+                <br> $60.00
+            </p>
+        </div>
+
+        <div class="producto">   <!--13 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/mielj.jpg">
+                <div class="back">
+                    <p><br>Jabón exfoliante suave y nutritivo.<br> Para pieles sensibles. <br><br>
+                        Ingredientes: <br>
+                       Glicerina blanca.
+                       Glicerina traslúcida.
+                       Avena orgánica en polvo.
+                       Miel de abeja 100% pura.
+                       Manteca de cacao.
+                       Cúrcuma en polvo.
+                       Aceite de sakura.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Ternura de Miel<br> $60.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/carbon.jpg">
+                <div class="back">
+                    <p><br><br>Jabón ideal para pieles <br> grasas o con acné. <br><br>
+                        Ingredientes: <br>
+                        Glicerina traslúcida. <br>
+                        Carbón activado. <br>
+                        Aceite de pachulí. <br>
+                        Aceite de limón. 
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Carbon Activado<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/cafe-cocoa.jpg">
+                <div class="back">
+                    <p><br>Jabón que ofrece una doble acción: exfoliante y antioxidante. El café estimula la circulación
+                        mientras que el cacao nutre e hidrata la piel.<br><br>
+                        Ingredientes:
+                       Glicerina blanca.
+                       Café suave puro en grano.
+                       Cacao en polvo.
+                       Manteca de karité.
+                       Fragancia de chocolate.
+                       Fragancia de café.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Café - Cacao<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/cafej.jpg">
+                <div class="back">
+                    <p><br>El jabón de café actúa como un exfoliante que elimina células muertas y mejora
+                        la circulación.<br><br>
+                        Ingredientes: <br>
+                       Glicerina traslúcida.
+                       Café suave puro en grano.
+                       Cacao en polvo.
+                       Manteca de karité.
+                       Aceite de sándalo.
+                       Fragancia de café.
+                       Colorante cosmético café.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Coffee Rush<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/chocolate.jpg">
+                <div class="back">
+                    <p>Rico en antioxidantes, este jabón protege la piel del envejecimiento prematuro y la hidrata en
+                        profundidad.<br><br><br>
+                        Ingredientes. <br>
+                        Glicerina blanca.
+                        Cacao en polvo.
+                        Manteca de karité.
+                        Aceite de chocolate.
+                        Colorante cosmético café.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Seda de Chocolate<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/jabonsabila.jpg">
+                <div class="back">
+                    <p>La sábila (aloe vera) es un poderoso regenerador cutáneo. <br>
+                        Este jabón hidrata, calma irritaciones.<br><br>
+                        Ingredientes: <br>
+                        Glicerina traslúcida.
+                        Aceite de pachulí.
+                        Pulpa orgánica de sábila.
+                        Alga espirulina orgánica.
+                        Aceite de sándalo.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Esmeralda de Sábila<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/oceano.jpg">
+                <div class="back">
+                    <p><br> Frescura del mar, proporcionante de frescura y limpieza. <br>
+                        Adicionado con pachulí que aporta propiedades regeneradoras.<br><br>
+                        Ingredientes:
+                        Glicerina blanca.
+                        Glicerina traslúcida.
+                        Manteca de karité.
+                        Aceite escencia de océano
+                        Colorante cosmético azul.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Fresco Océano<br> $50.00</p>
+        </div>        
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/lavanda.jpg">
+                <div class="back">
+                    <p>El jabón de lavanda es ideal para relajar la piel y la mente. <br> Contiene propiedades calmantes
+                        y regeneradoras, perfectas para pieles sensibles o con irritaciones.<br>
+                        Perfecto para el baño antes de dormir. <br><br>
+                        Ingredientes:
+                        Glicerina blanca.
+                        Glicerina traslúcida.
+                        Manteca de karité.
+                        Aceite de lavanda.
+                        Colorante cosmético morado.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Lavanda Relajante<br> $50.00</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/rosa-betabel.jpg">
+                <div class="back">
+                    <p>Este jabón ayuda a reducir manchas, líneas
+                        de expresión y estrías, hidratada y con un tono más uniforme y radiente. <br>
+                        Adicionado con las propiedades regeneradoras y antioxidantes para iluminar la piel.<br>
+                        Uso general. <br><br>
+                        Ingredientes:
+                        Glicerina blanca.
+                        Manteca de karité.
+                        Aceite de rosas.
+                        Betabel en polvo.
+                        Aceite de sakura.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Rosa Mosqueta- Betabel<br> $50.00</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 El Jardín del jabón. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="codigo.js" defer></script>
+</body>
+</html>

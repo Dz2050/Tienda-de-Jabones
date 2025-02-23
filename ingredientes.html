@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabonología</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="/imagenes/favicon-32x32.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <!-- <li><a href="contacto.html">Contacto</a></li> -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2 style="text-align: center; font-size: 2rem;">
+            &#x1F33B;Bienvenido a nuestra sección "Jabonología"&#x1F33B;</h2>
+        <p style="text-align: center;">
+            Nos apasiona ofrecer productos de alta calidad, elaborados con ingredientes 100% naturales
+            y cuidadosamente selecionados. <br> Cada jabón está formulado con esencias puras, extractos vegetales
+            y aceites esenciales que brindan beneficios únicos para la piel. <br> Creemos en el poder de la naturaleza
+            para nutrir y revitalizar, por eso elegimos materias primas de la mejor calidad. <br> Descubre las propiedades
+            de cada ingrediente al reverso de cada imagen.
+        </p>
+    </section>
+
+    <div class="product-grid">
+        <div class="producto">   <!--1 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/glicerina.png">
+                <div class="back">
+                    <p>Blanca o traslucida. <br> Ademas de mantener la hidratación y retener la humedad la base de glicerina no contiene productos quimicos
+                        agresivos, es una excelente alternativa a los jabones tradicionales, por otro lado ayuda a regular el pH lo 
+                        cual es crucial para una piel sana.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Base de Glicerina</p>
+        </div>
+
+        <div class="producto">   <!--9 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/cacao.png">
+                <div class="back">
+                    <p><br><br>Extraída de las semillas del cacao, nutre y protege contra la resequedad en la piel
+                        en profundidad manteniendola suave y elástica. <br> Un aditivo perfecto en algunas de 
+                        nuestras opciones disponibles.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Manteca de cacao</p>
+        </div>
+
+            <div class="producto">   <!--13 - 21 -->
+                <div class="product-image" onclick="flipImage(this)">
+                    <img class="front" src="imagenes/karite.png">
+                    <div class="back">
+                        <p><br>La manteca de karité proviene de las nueces del árbol de karité africano. <br>
+                            Ayuda a minimizar la aparición de estrías y mejora las cicatrices, mejora la elasticidad y suavidad de la piel,
+                            forma una película que aporta una protección adicional.
+                        </p>
+                    </div>
+                </div>
+                <p class="product-name">Mantece de karité</p>
+            </div>
+
+            <div class="producto">   <!--15 - 21 -->
+                <div class="product-image" onclick="flipImage(this)">
+                    <img class="front" src="imagenes/mielpura.png">
+                    <div class="back">
+                        <p><br><br> Su contenido de vitaminas y minerales ayuda eliminar celulas muertas, contiene antioxidantes, es un 
+                            anti-séptico natural, perfecta para piel sensible.
+                        </p>
+                    </div>
+                </div>
+                <p class="product-name">Miel 100% pura de abeja</p>
+            </div>
+
+        <div class="producto">   <!--2 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/jazminpng.png">
+                <div class="back">
+                    <p> <br>
+                        El aroma del jazmín tiene propiedades relajantes y puede ayudar a reducir el estrés y la ansiedad. 
+                        La aplicación de aceite esencial de jazmín en la piel no solo proporciona beneficios físicos, sino 
+                        también puede contribuir a mejorar el bienestar emocional.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de Jazmín</p>
+        </div>
+
+        <div class="producto">   <!--3 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/mosqueta.png">
+                <div class="back">
+                    <p>
+                        El aceite de rosa mosqueta es rico en ácidos grasos insaturados, ácido linoleico y linolénico, todos 
+                        participan en los procesos biológicos relacionados con la regeneración celular, haciendo de este aceite un gran aliado en 
+                        los procesos de cicatrización de marcas de acné o cualquier tipo de cicatrices.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Rosa Mosqueta</p>
+        </div>
+
+        <div class="producto">   <!--4 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/sakura.png">
+                <div class="back">
+                    <p><br>El aceite de Sakura ofrece beneficios como hidratación y suavidad para la piel, protección 
+                        contra el sol, reducción del estrés y ansiedad, mejora del sueño, alivio del dolor, 
+                        además de sus propiedades antiinflamatorias.
+                     </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de Sakura</p>
+        </div>
+
+        <div class="producto">   <!--14 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/lavanda.png">
+                <div class="back">
+                    <p><br><br>El aceite de lavanda ofrece beneficios como reducción del estrés y ansiedad, 
+                        mejora del sueño, alivio del dolor y la inflamación, calmante para la piel irritada, 
+                        y propiedades antifúngicas.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de lavanda</p>
+        </div>
+
+        <div class="producto">
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/limon.png">
+                <div class="back">
+                    <p><br>El aceite de limón ofrece beneficios como limpieza y desinfección de la piel, 
+                        reducción de la aparición de poros y acné, mejora de la circulación sanguínea, 
+                        refrescante y tonificante con propiedades antibacterianas.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de limón</p>
+        </div>
+
+        <div class="producto">   <!--16 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/pachuli.png">
+                <div class="back">
+                    <p><br>El aceite de pachulí proveniente de Asía y extraído de las hojas del árbol de pachulí 
+                        (Pogostemon cablin), contiene propiedades antibacterianas y antifúngicas, además de hidratar
+                        y ayudar a la reducción de la aparición de las arrugas.
+
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de pachulí</p>
+        </div>
+
+        <div class="producto">   <!--20 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/sandalo.png">
+                <div class="back">
+                    <p>
+                    El aceite de sándalo proveniente de India y Australia, extraído de la madera del árbol de 
+                    sándalo (Santalum album), contiene propiedades como reducción de la aparición de arrugas, y 
+                    además es conocido por sus propiedades afrodisíacas.
+                </p>
+                </div>
+            </div>
+            <p class="product-name">Aceite de sándalo</p>
+        </div>
+
+        <div class="producto">   <!--5 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/sabila.png">
+                <div class="back">
+                    <p><br>La pulpa de sábila extraída de las hojas de la planta de sábila (Aloe barbadensis)
+                        Calma e hidrata la piel, reduce la inflamación y el dolor, contiene propiedades antibacterianas 
+                        y antifúngicas además de ayudar a la elasticidad.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Sábila(Aloe Vera)</p>
+        </div>
+
+        <div class="producto">   <!--6 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/alga.png">
+                <div class="back">
+                    <p><br>La alga espirulina, son algas microscópicas de agua dulce, cultivadas en todo el mundo
+                        beneficiosa en proteínas, vitaminas y minerales, además de contener antioxidantes
+                        será un excelente aditivo para tu piel.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Alga espirulina</p>
+        </div>
+
+        <div class="producto">   <!--6 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/arroz.png">
+                <div class="back">
+                    <p><br>El arroz en polvo te ayudará a absorber el exceso de grasas y humedad además de suavizar la
+                        piel reduciendo la aparición de poros y arrugas, 
+                        agregando su efecto de luminosidad es perfecto para pieles sensibles.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Arroz en polvo</p>
+        </div>
+
+        <div class="producto">   <!--19 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/maizena.png">
+                <div class="back">
+                    <p><br>La maizena, también conocida como almidón de maíz, es un ingrediente que te ofrece
+                        beneficios como ayudar controlar la producción de sebo, proteger la piel contra la irritación
+                        y el enrojecimiento mantiendo la suavidad.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Maizena</p>
+        </div>
+
+        <div class="producto">   <!--7 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/avena.png">
+                <div class="back">
+                    <p><br>La avena en polvo te dará excelentes beneficios, hidrata y suaviza la piel, calma la irritación, 
+                        protege la piel 
+                        contra el estrés oxidativo, adecuado para pieles con problemas de eczema o dermatitis.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Avena en polvo</p>
+        </div>
+
+        <div class="producto">   <!--8 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/betabel.jpg">
+                <div class="back">
+                    <p><br>El betabel en polvo te proporciona propiedades antioxidantes, el estrés oxidativo, mejora
+                        la circulación sanguínea y oxigenación de la piel, además de propiedades astringentes, da un
+                        tono natural y saludable gracias a su contenido de betalainas.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Betabel(Remolacha)</p>
+        </div>
+
+        <div class="producto">   <!--10 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/cafeing.png">
+                <div class="back">
+                    <p><br>El café en grano es un exfoliante conteniendo antioxidantes, mejora la circulación sanguínea,
+                        ayuda a reducir la aparición de ojeras y bolsas debajo de los ojos con propiedades astringentes
+                        reduce la aparición de poros dando un tono más uniforme a la piel.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Café molido puro</p>
+        </div>
+
+        <div class="producto">   <!--11 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/ingredientecarbon.png">
+                <div class="back">
+                    <p><br>El carbón activado te ayudará a absorber y eliminar toxinas, eliminar impurezas, reduce la aparición
+                        de poros y controlar la producción de sebo, con propiedades antibacterianas será
+                        tu ayudante perfecto para tratar el acné.
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Carbón activado</p>
+        </div>
+
+        <div class="producto">   <!--12 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/cocoa.png">
+                <div class="back">
+                    <p><br>La cocoa en polvo es rica en antioxidantes, proteje la piel contra el estrés oxidativo, ayuda
+                        a hidratar y suavizar la piel, con propiedades antiinflamatorias también ayuda a las pieles 
+                        sensibles dando un tono más uniforme y saludable. 
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Cocoa en polvo</p>
+        </div>
+
+        <div class="producto">   <!--13 - 21 -->
+            <div class="product-image" onclick="flipImage(this)">
+                <img class="front" src="imagenes/curcuma.png">
+                <div class="back">
+                    <p>La curcuma en polvo, una potente aliada, conteniendo vitamina C, vitamina E,
+                        vitamina K, además de también contener minerales como el potasio, magnesio y el hierro, todos
+                        en conjunto mejoran la producción de colageno, antioxidantes y la circulación sanguínea. 
+                    </p>
+                </div>
+            </div>
+            <p class="product-name">Cúrcuma en polvo</p>
+        </div>
+
+            <div class="producto">   <!--17 - 21 -->
+                <div class="product-image" onclick="flipImage(this)">
+                    <img class="front" src="imagenes/colorantes.png">
+                    <div class="back">
+                        <p><br>Los colorantes cosméticos, obtenidos a partir de minerales y/o ingredientes naturales,
+                            dan color sin alterar la composición del jabón, cuidadosamente seleccionados y minimizando
+                            su uso.
+                        </p>
+                    </div>
+                </div>
+                <p class="product-name">Colorantes cosméticos</p>
+            </div>
+
+            <div class="producto">   <!--18 - 21 -->
+                <div class="product-image" onclick="flipImage(this)">
+                    <img class="front" src="imagenes/esencias.png">
+                    <div class="back">
+                        <p><br><br>Las esencias, derivadas de plantas, frutas y flores, aportan sus
+                            fragancias y beneficios terapéuticos dando ese extra en cada pieza.
+                        </p>
+                    </div>
+                </div>
+                <p class="product-name">Esencias</p>
+            </div>
+
+    </div>
+
+        <h4 style="text-align: center; font-weight: 350;">
+            Nota: las propiedades mencionadas son de origen natural y no sustituyen tratamientos médicos. <br>
+            Utiliza nuestros jabones artesanales con moderación. <br> Consulta nuestros ingredientes y realiza una prueba
+            de alergia antes de usarlo por completo y evita el contacto con los ojos y mucosas. <br> 
+            No somos responsables de reacciones adversas. 
+        </h4>
+
+    <footer>
+        <p>&copy; 2025 El Jardín del jabón. Todos los derechos reservados.</p>
+    </footer>
+    <script src="codigo.js" defer></script>
+</body>
+</html>

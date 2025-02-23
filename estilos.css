@@ -1,0 +1,481 @@
+body {
+  background-color: #C6C4F1;    /* C6C4F1 D9D7F7 E2E0F9   */
+    font-family: "Playwrite AU SA", serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('/imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+/*  NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #f799e2;
+  color: #333333;
+  width: 50%;
+  top: 0;
+  z-index: 1000;
+  margin:  0 auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 5px #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+  transition: 0.9s;
+}
+
+.nav-links a:hover {
+  color: aqua;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.3rem;
+  text-shadow: 0 3px 5px #333;
+}
+
+.descripcion {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/*  whatsapp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.whatsapp img {
+  width: 24px;
+  height: 24px;
+}
+
+/* PRODUCTOS */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 20px;
+  max-width: 1000px;
+  margin:  0 auto;
+}
+
+.producto {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  padding: 15px;
+  gap: 50;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px #333;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.back {
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.product-image.flipped {
+  transform: rotateY(180deg);
+}
+
+.product-name {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #e06bc7;
+  text-shadow: 0 2px 2px white;
+}
+
+/* /////////////////// tres caras ////////////////////// */
+
+/* .producto2 {
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  text-align: center;
+  margin-bottom: 60px;
+  gap: 50px;
+}
+
+.producto2-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.cara {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #333;
+}
+
+.front img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back2 {
+  transform: rotateY(180deg);
+  background: #ddd;
+}
+
+.extra {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 10;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  z-index: -1;
+}
+
+.extra.show {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+button {
+  margin-top: 10px;
+  padding: 4px 8px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+} */
+
+/* //////////////////////////////////////// */
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #f0f4eb;
+  box-shadow: 0 4px 8px #333;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  border-radius: 15px 15px 0 0;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text-box h3 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.text-box p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+}
+
+/* Ajustes generales para pantallas pequeñas */
+
+@media (max-width: 768px) {
+  header {
+      height: 300px;
+      background-position: center;
+  }
+
+  .navbar {
+      flex-direction: column;
+      width: 70%;
+      padding: 10px;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  .descripcion {
+      font-size: 18px;
+      width: 90%;
+  }
+
+  .whatsapp {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+
+  .whatsapp img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+  }
+
+  .producto {
+      width: 100%;
+      height: auto;
+  }
+
+  .producto2 {
+      width: 100%;
+      height: auto;
+  }
+
+  .cara {
+    max-width: 100%;
+    min-height: auto;
+  }
+
+  .front img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .card {
+      max-width: 90%;
+      height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+      height: 300px;
+      background-position: center;
+  }
+
+  .inicio {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .navbar {
+      flex-direction: column;
+      width: 80%;
+      padding: 10px;
+      font-size: 1.3rem;
+      text-align: center;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  .descripcion {
+    justify-content: center;
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .whatsapp {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+
+  .whatsapp img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .producto {
+    justify-self: center;
+    width: 90%;
+    height: 400px;
+  }
+
+   .back {
+    font-size: 1rem;
+  }
+
+  .producto2 {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .front img {
+      height: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    width: 100%; 
+    height: 400px; 
+    border-radius: 10px;
+  }
+
+  .text-box {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    padding: 10px;
+    background: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .text-box h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+
+  .text-box p {
+    font-size: 1em;
+  }  
+}
