@@ -131,6 +131,17 @@ h1 {
   position: absolute;
 }
 
+.flip-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
 .back {
   background: white;
   color: black;
