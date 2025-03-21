@@ -87,8 +87,8 @@ h1 {
 }
 
 .whatsapp img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 
 /* PRODUCTOS */
@@ -310,6 +310,12 @@ footer {
 
 /* Ajustes generales para pantallas pequeñas */
 
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   header {
       height: 300px;
@@ -317,18 +323,57 @@ footer {
   }
 
   .navbar {
-      flex-direction: column;
-      width: 70%;
-      padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
   }
 
   .nav-links {
-      flex-direction: column;
-      text-align: center;
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: none;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Se muestra cuando se activa */
   }
 
   .nav-links li {
-      margin: 10px 0;
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #f799e2;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .nav-links a:hover {
+    background-color: #0056b3;
   }
 
   h1 {
@@ -346,8 +391,8 @@ footer {
   }
 
   .whatsapp img {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
   }
 
   .product-grid {
@@ -395,20 +440,57 @@ footer {
   }
 
   .navbar {
-      flex-direction: column;
-      width: 80%;
-      padding: 10px;
-      font-size: 1.3rem;
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
   }
 
   .nav-links {
-      flex-direction: column;
-      text-align: center;
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #f799e2;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Se muestra cuando se activa */
   }
 
   .nav-links li {
-      margin: 10px 0;
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .nav-links a:hover {
+    background-color: #0056b3;
   }
 
   h1 {
@@ -427,8 +509,8 @@ footer {
   }
 
   .whatsapp img {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
   }
 
   .product-grid {

@@ -25,3 +25,23 @@ document.querySelectorAll(".producto2-container").forEach((container) => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
+
+
+//////  Este parrafo de codigo funciona para cualquier contenido
+document.addEventListener("DOMContentLoaded", function () {
+    const currentVersion = "1.0.1"; // Cambiar este número en cada actualización para que el navegador detecte los cambios
+    const storedVersion = localStorage.getItem("siteVersion");
+
+    if (storedVersion !== currentVersion) {
+        localStorage.setItem("siteVersion", currentVersion);
+        location.reload(true); // Recarga la página con la nueva versión para el usuario
+    }
+});
